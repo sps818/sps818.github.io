@@ -3,186 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parker | 个人主页</title>
-  <meta name="description" content="Parker 的个人作品集 - 全栈开发者">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Parker | 作品集</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">Parker</a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#about" class="nav-link">关于</a></li>
-        <li><a href="#skills" class="nav-link">技能</a></li>
-        <li><a href="#projects" class="nav-link">项目</a></li>
-        <li><a href="#contact" class="nav-link">联系</a></li>
-      </ul>
-      <div class="nav-toggle" id="navToggle">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-avatar">
-        <i class="fas fa-code"></i>
-      </div>
-      <h1 class="hero-title">Parker</h1>
-      <p class="hero-subtitle">全栈开发者</p>
-      <p class="hero-desc">
-        Java · Vue · Spring Boot · MySQL · Redis · Docker
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">查看项目</a>
-        <a href="#contact" class="btn btn-outline">联系我</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">关于我</h2>
-      <p class="section-desc">
-        热爱编程的全栈开发者，专注于构建高质量的应用与服务。
-        拥有 Java 后端和 Vue 前端的技术栈经验，致力于用技术解决实际问题。
-      </p>
-      <div class="about-grid">
-        <div class="about-card">
-          <i class="fas fa-laptop-code"></i>
-          <h3>全栈开发</h3>
-          <p>从后端服务到前端界面，端到端交付完整功能</p>
-        </div>
-        <div class="about-card">
-          <i class="fas fa-server"></i>
-          <h3>后端架构</h3>
-          <p>Spring Boot 微服务 + MySQL 数据库设计与优化</p>
-        </div>
-        <div class="about-card">
-          <i class="fas fa-cloud"></i>
-          <h3>DevOps</h3>
-          <p>Docker 容器化部署，Nginx 反向代理与负载均衡</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">技术栈</h2>
-      <p class="section-desc">常用的技术与工具</p>
-      <div class="skills-grid">
-        <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-        <div class="skill-item"><i class="fab fa-vuejs"></i><span>Vue</span></div>
-        <div class="skill-item"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
-        <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
-        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
-        <div class="skill-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-        <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
-        <div class="skill-item"><i class="fas fa-code-branch"></i><span>Redis</span></div>
-        <div class="skill-item"><i class="fab fa-nginx"></i><span>Nginx</span></div>
-        <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
-        <div class="skill-item"><i class="fab fa-maven"></i><span>Maven</span></div>
-        <div class="skill-item"><i class="fas fa-terminal"></i><span>Linux</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">项目</h2>
-      <p class="section-desc">一些值得分享的作品</p>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-img project-placeholder">
-            <i class="fas fa-exchange-alt"></i>
-          </div>
-          <div class="project-info">
-            <h3>支付网关服务</h3>
-            <p>基于 Spring Boot 构建的统一支付接入服务，支持多渠道支付对接、对账与回调处理。</p>
-            <div class="project-tags">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>MySQL</span>
-              <span>Redis</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img project-placeholder">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-          <div class="project-info">
-            <h3>电商后台管理</h3>
-            <p>Vue + Spring Boot 全栈电商后台，包含商品管理、订单处理、数据看板等功能模块。</p>
-            <div class="project-tags">
-              <span>Vue</span>
-              <span>Spring Boot</span>
-              <span>MySQL</span>
-              <span>Redis</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img project-placeholder">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <div class="project-info">
-            <h3>即时消息推送系统</h3>
-            <p>基于 WebSocket 的实时消息推送服务，支持点对点通信与广播，集成消息持久化与历史查询。</p>
-            <div class="project-tags">
-              <span>Java</span>
-              <span>WebSocket</span>
-              <span>Redis</span>
-              <span>Docker</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">联系我</h2>
-      <p class="section-desc">欢迎交流与合作</p>
-      <div class="contact-content">
-        <div class="contact-links">
-          <a href="https://github.com/sps818" target="_blank" class="contact-item">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-          </a>
-          <a href="mailto:63447407@qq.com" class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <span>Email</span>
-          </a>
-        </div>
-        <p class="contact-note">
-          或通过 GitHub Issues 联系我
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Parker. Built with <i class="fas fa-heart"></i></p>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+  <img src="design_main.png" alt="Parker 作品集设计稿">
 </body>
 </html>
