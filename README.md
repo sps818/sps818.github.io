@@ -1,6 +1,4 @@
-# sps818.github.io
-
-Parker 的个人作品集网站
+# Parker 的个人作品集网站
 
 ## 本地开发
 
